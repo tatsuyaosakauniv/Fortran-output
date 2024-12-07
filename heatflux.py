@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # データファイルの読み込み
-data = pd.read_csv('heatflux_1205.dat', sep='\s+', header=None, low_memory=False)  # 空白区切りの場合
+data = pd.read_csv('heatflux_1207.dat', sep='\s+', header=None, low_memory=False)  # 空白区切りの場合
 
 # 1列目を新しいx軸データで置き換える（数値型に変換）
 x = pd.to_numeric(data[0], errors='coerce')

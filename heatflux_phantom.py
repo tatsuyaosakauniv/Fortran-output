@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # データファイルの読み込み
-data = pd.read_csv('heatflux_1122.dat', sep=r'\s+', header=None, low_memory=False)
+data = pd.read_csv('heatflux_1207.dat', sep=r'\s+', header=None, low_memory=False)
 
 # 一列目のデータを数値型に変換
 x = pd.to_numeric(data[0], errors='coerce')

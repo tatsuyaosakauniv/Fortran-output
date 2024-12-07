@@ -1,7 +1,7 @@
 import numpy as np
 
 # heatflux_1205.datのデータを読み込む
-data_heatflux = np.loadtxt('heatflux_1205.dat')
+data_heatflux = np.loadtxt('heatflux_1207.dat')
 
 # 1列目を横軸、各列を縦軸として回帰分析
 # 切片をゼロに固定して傾きを計算
@@ -15,7 +15,7 @@ slope_interface_top = calculate_slope(x, data_heatflux[:, 3]) * 10**9
 slope_interface_bottom = calculate_slope(x, data_heatflux[:, 4]) * 10**9
 
 # tempe_Layer.datのデータを読み込む
-data_tempe_layer = np.loadtxt('tempe_Layer_1125.dat')
+data_tempe_layer = np.loadtxt('tempe_Layer_1207.dat')
 
 # 2列目の差を計算
 dT_bottom = data_tempe_layer[5, 1] - data_tempe_layer[4, 1]
